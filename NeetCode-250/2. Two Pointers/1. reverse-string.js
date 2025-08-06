@@ -9,6 +9,8 @@ function reverseString(s) {
         left++;
         right--;
     }
+
+    console.log(s)
 }
 
 reverseString(["h", "e", "l", "l", "o"]);
