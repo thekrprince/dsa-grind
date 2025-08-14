@@ -21,5 +21,5 @@ function nearestSmallerToLeft(arr) {
   return res;
 }
 
-console.log(nearestSmallerToLeft([4, 5, 2, 10, 8]));
-console.log(nearestSmallerToLeft([2, 1]));
+console.log(nearestSmallerToLeft([4, 5, 2, 10, 8])); // [-1, 4, -1, 2, 2]
+console.log(nearestSmallerToLeft([2, 1])); // [-1, -1]

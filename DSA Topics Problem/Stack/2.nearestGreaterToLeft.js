@@ -27,7 +27,7 @@ function nearestGreaterToLeft(arr) {
 }
 
 const res1 = nearestGreaterToLeft([4, 2, 3, 1]);
-console.log(res1);
+console.log(res1); // [-1, 4, 4, 3]
 
 const res2 = nearestGreaterToLeft([1, 3, 2, 4]);
-console.log(res2);
+console.log(res2); // [-1, -1, 3, -1]

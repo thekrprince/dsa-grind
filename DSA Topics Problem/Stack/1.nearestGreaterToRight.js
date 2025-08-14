@@ -29,4 +29,4 @@ function findNearestGreaterInRight(arr) {
 }
 
 const res1 = findNearestGreaterInRight([1, 3, 2, 4]);
-console.log(res1);
+console.log(res1); // [3, 4, 4, -1]

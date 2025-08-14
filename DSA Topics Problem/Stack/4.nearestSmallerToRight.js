@@ -21,5 +21,5 @@ function nearestSmallerToRight(arr) {
   return res.reverse();
 }
 
-console.log(nearestSmallerToRight([4, 5, 2, 10, 8]));
-console.log(nearestSmallerToRight([2, 1]));
+console.log(nearestSmallerToRight([4, 5, 2, 10, 8])); // [ 2, 2, -1, 8, -1 ]
+console.log(nearestSmallerToRight([2, 1])); // [1, -1]

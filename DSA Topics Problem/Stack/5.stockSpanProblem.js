@@ -26,4 +26,4 @@ function stockSpanProblem(arr) {
   return res;
 }
 
-console.log(stockSpanProblem([100, 80, 60, 70, 60, 75, 85]));
+console.log(stockSpanProblem([100, 80, 60, 70, 60, 75, 85])); // [1, 1, 1, 2, 1, 4, 6]
