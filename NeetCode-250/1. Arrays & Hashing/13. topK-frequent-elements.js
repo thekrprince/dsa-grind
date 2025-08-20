@@ -17,5 +17,5 @@ function topKFrequent(nums, k) {
     return topKEle;
 }
 
-console.log(topKFrequent([1, 1, 1, 2, 3, 3], 2));
-console.log(topKFrequent([1], 1));
+console.log(topKFrequent([1, 1, 1, 2, 3, 3], 2)); // [1, 3]
+console.log(topKFrequent([1], 1)); // [1]
