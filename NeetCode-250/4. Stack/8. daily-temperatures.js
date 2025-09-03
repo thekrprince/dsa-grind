@@ -1,4 +1,4 @@
-// LC 739. Daily Temperatures
+// LC 739. Daily Temperatures - https://leetcode.com/problems/daily-temperatures/description/
 
 function dailyTemperatures(temperatures) {
     let stack = [];
