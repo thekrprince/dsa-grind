@@ -9,7 +9,6 @@ function removeElement(nums, val) {
       k++;
     }
   }
-  console.log(nums);
   return k;
 }
 
