@@ -3,6 +3,10 @@
 // Pseudo Code
 // Take two variables to store the first and second largest and assign both with -Infinity
 // Run the array through loop
+// Check if the num is greater than firstLargest
+// If yes, then assign the firstLargest to secondLargest first, then assign the current val to firstLargest
+// Else if the num is not greater than firstLargest, it can be greater than secondLargest
+// In this case, assign the num to the secondLargest.
 
 function findSecondLargest(nums) {
     let firstLargest = -Infinity;
