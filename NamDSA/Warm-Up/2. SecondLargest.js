@@ -16,7 +16,7 @@ function findSecondLargest(nums) {
         if (num > firstLargest) {
             secondLargest = firstLargest;
             firstLargest = num;
-        } else if (num > secondLargest) {
+        } else if (num < firstLargest && num > secondLargest) {
             secondLargest = num;
         }
     }
@@ -26,3 +26,6 @@ function findSecondLargest(nums) {
 
 const secondLargest = findSecondLargest([5, 2, 4, 8, 7]);
 console.log(secondLargest);
+
+const secondLargest1 = findSecondLargest([55, 22, 44, 88, 22, 88, 77]);
+console.log(secondLargest1);
