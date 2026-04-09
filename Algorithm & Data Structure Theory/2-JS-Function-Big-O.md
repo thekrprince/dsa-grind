@@ -4,7 +4,7 @@
 
 - Understanding how objects and arrays works, through the lens of Big O.
 - Explain why adding elements to the beginning of an arrays is costly.
-- Compare and contrast the run time for arrays and objects, as sell as built -in methods.
+- Compare and contrast the run time for arrays and objects, as well as built -in methods.
 
 ## The Big O of Objects
 
