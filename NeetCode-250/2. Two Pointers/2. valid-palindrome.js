@@ -1,4 +1,4 @@
-// LC 125 - Valid Palindrome
+// LC 125 - Valid Palindrome - https://leetcode.com/problems/valid-palindrome/
 
 function isPalindrome(s) {
     let left = 0;

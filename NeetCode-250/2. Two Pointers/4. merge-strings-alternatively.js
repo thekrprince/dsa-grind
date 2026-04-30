@@ -1,4 +1,4 @@
-// LC 1768 - Merge Strings Alternately
+// LC 1768 - Merge Strings Alternately - https://leetcode.com/problems/merge-strings-alternately/description/
 
 function mergeAlternately(word1, word2) {
     let i = 0;

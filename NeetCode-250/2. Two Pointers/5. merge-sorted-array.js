@@ -1,4 +1,4 @@
-// LC 88 - Merge Sorted Array
+// LC 88 - Merge Sorted Array - https://leetcode.com/problems/merge-sorted-array/description/
 
 function merge(nums1, m, nums2, n) {
     let last = m + n - 1;

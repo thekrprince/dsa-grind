@@ -1,4 +1,4 @@
-// LC 344 - Reverse String
+// LC 344 - Reverse String - https://leetcode.com/problems/reverse-string/
 
 function reverseString(s) {
     let left = 0;
@@ -10,7 +10,7 @@ function reverseString(s) {
         right--;
     }
 
-    console.log(s)
+    console.log(s);
 }
 
 reverseString(["h", "e", "l", "l", "o"]);

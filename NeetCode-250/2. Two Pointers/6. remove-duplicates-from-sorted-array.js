@@ -1,10 +1,10 @@
-// LC 26 - Remove Duplicates from Sorted Array
+// LC 26 - Remove Duplicates from Sorted Array - https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
 function removeDuplicates(nums) {
     let i = 0;
 
     for (let j = 1; j < nums.length; j++) {
-        console.log(nums)
+        console.log(nums);
         if (nums[i] !== nums[j]) {
             i++;
             nums[i] = nums[j];
