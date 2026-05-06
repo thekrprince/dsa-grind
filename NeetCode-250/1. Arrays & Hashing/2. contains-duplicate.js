@@ -1,4 +1,4 @@
-// LC 217 - Contains Duplicate
+// LC 217 - Contains Duplicate - https://leetcode.com/problems/contains-duplicate/description/
 
 let containsDuplicate = function (nums) {
     const obj = {};
@@ -12,7 +12,7 @@ let containsDuplicate = function (nums) {
     }
 
     return false;
-}
+};
 
 console.log(containsDuplicate([1, 2, 3, 1]));
 console.log(containsDuplicate([1, 2, 3, 4]));
