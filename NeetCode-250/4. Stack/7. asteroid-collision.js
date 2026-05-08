@@ -1,5 +1,8 @@
 // LC 735. Asteroid Collision - https://leetcode.com/problems/asteroid-collision/description/
 
+// Time Complexity -> O(n) -> Although there’s a nested while loop, each asteroid is pushed and popped at most once, 
+// so the total number of stack operations is linear. Therefore the time complexity is O(n) via amortized analysis.
+
 function asteroidCollision(asteroids) {
     let stack = [];
 
