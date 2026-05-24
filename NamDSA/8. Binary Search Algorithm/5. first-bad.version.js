@@ -27,4 +27,4 @@ function isBadVersion(version) {
 const findFirstBadVersion = solution(isBadVersion);
 
 const totalVersions = 5;
-console.log(findFirstBadVersion(5));
+console.log(findFirstBadVersion(totalVersions));
