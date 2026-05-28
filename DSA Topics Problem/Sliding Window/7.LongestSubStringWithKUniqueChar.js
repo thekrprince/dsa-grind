@@ -1,4 +1,19 @@
 // Longest Substring With K Unique Characters
+// Given a string, find the length of the longest substring in it with no more than K distinct characters.
+// Example 1:
+// Input: String="araaci", K=2
+// Output: 4
+// Explanation: The longest substring with no more than '2' distinct characters is "araa".
+
+// Example 2:
+// Input: String="aabacbebebe", K=3
+// Output: 7
+// Explanation: The longest substring with no more than '3' distinct characters is "cbebebe".
+
+// Example 3:
+// Input: String="cbbebi", K=1
+// Output: 1
+// Explanation: The longest substrings with no more than '1' distinct characters are "c" or "b".
 
 function longestSubstringWithUniqueCharacter(str, k) {
   let i = 0;
@@ -31,7 +46,7 @@ function longestSubstringWithUniqueCharacter(str, k) {
   return longestSub;
 }
 
-console.log(longestSubstringWithUniqueCharacter("aabacbebebe", 3));
+console.log(longestSubstringWithUniqueCharacter("aabacbebebe", 3)); // 7
 
 // Same code with little optimization
 function longestSubstringWithUniqueCharacter1(str, k) {
@@ -70,6 +85,6 @@ function longestSubstringWithUniqueCharacter1(str, k) {
   return longestSub;
 }
 
-console.log(longestSubstringWithUniqueCharacter1("aabacbebebe", 3));
-console.log(longestSubstringWithUniqueCharacter1("aaaa", 1));
-console.log(longestSubstringWithUniqueCharacter1("abcba", 2));
+console.log(longestSubstringWithUniqueCharacter1("aabacbebebe", 3)); // 7
+console.log(longestSubstringWithUniqueCharacter1("aaaa", 1)); // 4
+console.log(longestSubstringWithUniqueCharacter1("abcba", 2)); // 3
