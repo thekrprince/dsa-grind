@@ -8,29 +8,29 @@ function findFirstAndLastPosition(arr, target) {
     while (left < right) {
         const mid = left + Math.floor((right - left) / 2);
 
+        if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid;
+        }
+    }
+
+    if (arr[left] === target) ans[0] = left;
+
+    left = 0;
+    right = arr.length - 1;
+
+    while (left < right) {
+        const mid = left + Math.ceil((right - left) / 2);
+
         if (arr[mid] > target) {
             right = mid - 1;
         } else {
             left = mid;
         }
     }
-    ans[0] = left;
 
-    left = 0;
-    right = arr.length - 1;
-
-    // while (left < right) {
-    //     const mid = left + Math.ceil((right - left) / 2);
-
-    //     if (arr[mid] < target) {
-    //         left = mid + 1;
-    //     } else {
-    //         right = mid;
-    //     }
-    // }
-
-    // ans[1] = left;
-    console.log(ans);
+    if (arr[left] === target) ans[1] = left;
     return ans;
 }
 
