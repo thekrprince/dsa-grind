@@ -1,7 +1,7 @@
 // Step 1: Define the Node
 class Node {
     constructor(val) {
-        this.val = val;
+        this.value = val;
         this.next = null; // Points to nothing initially
     }
 }
@@ -32,6 +32,9 @@ class LinkedList {
         current.next = newNode;
     }
 
+
+    // Method 1: Print to Console
+    // This method prints each node value sequentially as it traverses the list.
     // Traverses and print each node's value
     print() {
         let current = this.head;
@@ -42,18 +45,33 @@ class LinkedList {
             return;
         }
 
-        while (current.next) {
+        while (current) {
             console.log(current);
             current = current.next; // Move to the next clue/node
         }
+    }
+
+    // Method 2: Format as a Visual String (Recommended)
+    printList() {
+        let current = this.head;
+        const values = [];
+
+        while (current) {
+            values.push(current.value);
+            current = current.next;
+        }
+
+        console.log(values.join(" -> ") + " -> null");
     }
 }
 
 // Usage
 const list = new LinkedList();
-list.print();
+// list.print();
+list.printList();
 list.add(10);
 list.add(20);
 list.add(30);
 list.add(40);
-list.print();
+// list.print();
+list.printList();
