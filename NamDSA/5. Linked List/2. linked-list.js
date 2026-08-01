@@ -32,7 +32,7 @@ LinkedList.prototype.print = function () {
         return;
     }
 
-    while (current.next !== null) {
+    while (current) {
         console.log(current);
         current = current.next;
     }
