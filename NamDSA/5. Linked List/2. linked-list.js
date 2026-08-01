@@ -38,10 +38,24 @@ LinkedList.prototype.print = function () {
     }
 };
 
+LinkedList.prototype.printList = function () {
+    let current = this.head;
+    const values = [];
+
+    while (current) {
+        values.push(current.value);
+        current = current.next;
+    }
+
+    console.log(values.join(" -> ") + " -> null");
+};
+
 const list = new LinkedList();
-list.print();
+// list.print();
+list.printList();
 list.add(100);
 list.add(200);
 list.add(300);
 list.add(400);
-list.print();
+// list.print();
+list.printList();
