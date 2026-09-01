@@ -40,7 +40,7 @@ class LinkedList {
 
         if (index === 0) {
             return this.addAtHead(val);
-        } else if (index === this.size - 1) {
+        } else if (index === this.size) {
             return this.addAtTail(val);
         } else {
             const newNode = new Node(val);

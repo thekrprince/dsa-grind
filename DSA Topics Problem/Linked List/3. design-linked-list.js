@@ -13,24 +13,23 @@ function MyLinkedList() {
 
 MyLinkedList.prototype.addAtHead = function (value) {
     let newNode = new Node(value);
-    if (this.size === 0) {
-        this.head = newNode;
-    } else {
-        newNode.next = this.head;
-        this.head = newNode;
-    }
+    newNode.next = this.head;
+    this.head = newNode;
     this.size++;
 };
 
 MyLinkedList.prototype.addAtTail = function (value) {
-    let current = this.head;
-
-    for (let i = 0; i < this.size; i++) {
-        current = current.next;
-    }
-
     let newNode = new Node(value);
-    current.next = newNode;
+
+    if (!this.head) {
+        this.head = newNode;
+    } else {
+        let current = this.head;
+        while (current.next !== null) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
     this.size++;
 };
 
@@ -40,11 +39,10 @@ MyLinkedList.prototype.addAtIndex = function (index, value) {
     }
     if (index === 0) {
         return this.addAtHead(value);
-    } else if (index === this.size - 1) {
+    } else if (index === this.size) {
         return this.addAtTail(value);
     } else {
         let current = this.head;
-
         for (let i = 0; i < index - 1; i++) {
             current = current.next;
         }
@@ -58,12 +56,16 @@ MyLinkedList.prototype.addAtIndex = function (index, value) {
 MyLinkedList.prototype.deleteAtIndex = function (index, value) {
     if (index < 0 || index >= this.size) return;
 
-    let current = this.head;
+    if (index === 0) {
+        this.head = this.head.next;
+    } else {
+        let current = this.head;
 
-    for (let i = 0; i < index; i++) {
-        current = current.next;
+        for (let i = 0; i < index - 1; i++) {
+            current = current.next;
+        }
+        current.next = current.next.next;
     }
-    current.next = current.next.next;
     this.size--;
 };
 
@@ -71,13 +73,25 @@ MyLinkedList.prototype.print = function () {
     let values = [];
     let current = this.head;
 
-    while (current.next) {
+    while (current) {
         values.push(current.value);
+        current = current.next;
     }
 
     console.log(values.join(" -> "), " -> null");
 };
 
 const ll = new MyLinkedList();
+ll.addAtTail(500);
 ll.addAtHead(23);
+ll.addAtHead(33);
+ll.addAtTail(50);
+ll.print();
+ll.addAtIndex(1, 56);
+ll.addAtIndex(0, 12);
+ll.addAtIndex(4, 19);
+ll.print();
+ll.deleteAtIndex(0);
+ll.print();
+ll.deleteAtIndex(4);
 ll.print();
