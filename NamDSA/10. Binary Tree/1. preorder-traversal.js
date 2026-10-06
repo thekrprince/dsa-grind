@@ -1,4 +1,5 @@
 // LC 144. Binary Tree Preorder Traversal
+// Root -> Left -> Right
 
 import { buildTree } from "../utils/index.js";
 
